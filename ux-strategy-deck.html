@@ -77,7 +77,7 @@
   p:last-child { margin-bottom: 0; }
   .muted { color: var(--muted-dark); }
   .slide.dark .muted { color: var(--muted-light); }
-  .lede { font-size: 18px; max-width: 620px; }
+  .lede { font-size: 18px; }
 
   .ghost {
     position: absolute; z-index: 0; line-height: 1;
@@ -106,7 +106,7 @@
   .slide.dark .step .k { color: var(--muted-light); }
   .step .v p:last-child { margin-bottom: 0; }
 
-  .pline { display: flex; gap: 16px; align-items: baseline; padding: 9px 0; }
+  .pline { display: flex; gap: 16px; align-items: baseline; padding: 6px 0; }
   .pline .n {
     flex: 0 0 40px; height: 40px; border-radius: 50%;
     background: var(--steel-tint); border: 1.5px solid var(--line);
@@ -114,13 +114,13 @@
     font-family: "Poppins", sans-serif; font-weight: 700; font-size: 13px; color: var(--crimson);
     align-self: center;
   }
-  .pline .t { font-size: 15.5px; }
+  .pline .t { font-size: 14px; }
   .pline .t b { color: var(--navy); }
 
   .callout {
     background: var(--steel-tint); border-left: 3px solid var(--crimson);
-    border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 24px 0;
-    font-size: 14.5px; color: #232B38;
+    border-radius: 0 12px 12px 0; padding: 10px 14px; margin: 14px 0;
+    font-size: 13.5px; color: #232B38;
   }
   .slide.dark .callout { background: rgba(255,255,255,0.08); color: var(--offwhite); }
 
@@ -134,26 +134,26 @@
   .slide.dark .pfoot { border-top-color: var(--line-dark); color: rgba(255,255,255,0.6); }
 
   /* --- Route cards (slide 4) --- */
-  .route-cards { display: flex; flex-direction: column; gap: 14px; margin-top: 18px; }
+  .route-cards { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
   .route-card {
-    display: grid; grid-template-columns: 56px 1fr; gap: 14px;
-    padding: 16px 18px; border-radius: 12px;
+    display: grid; grid-template-columns: 44px 1fr; gap: 10px;
+    padding: 10px 14px; border-radius: 10px;
     background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10);
     align-items: start;
   }
   .route-num {
     font-family: "Poppins", sans-serif; font-weight: 700;
-    font-size: 26px; color: #E0697A; line-height: 1.15;
+    font-size: 22px; color: #E0697A; line-height: 1.15;
   }
   .route-name {
     font-family: "Poppins", sans-serif; font-weight: 600;
-    font-size: 16px; color: var(--white); margin-bottom: 2px;
+    font-size: 14.5px; color: var(--white); margin-bottom: 1px;
   }
   .route-who {
-    font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase;
-    color: var(--muted-light); margin-bottom: 5px;
+    font-size: 10.5px; letter-spacing: 0.10em; text-transform: uppercase;
+    color: var(--muted-light); margin-bottom: 3px;
   }
-  .route-desc { font-size: 14px; color: var(--offwhite); line-height: 1.55; }
+  .route-desc { font-size: 13px; color: var(--offwhite); line-height: 1.45; }
 
   /* --- Trust matrix (slide 6) --- */
   .matrix-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 20px; }
@@ -286,10 +286,10 @@
     <div class="inner">
       <div class="kicker">The Shift</div>
       <h2>UX is now Product Experience.<br>The name change matters.</h2>
-      <p style="max-width:560px;">User Experience was about designing for users — making things usable, learnable, accessible. Product Experience is about designing for buyers of a product — building something people want to buy that is also usable, consistent, accessible, and trustworthy.</p>
-      <p style="max-width:560px;">The function is evolving into a hybrid of design, engineering enablement, and operations. We create the ability for anyone to ship ideas quickly — prototypes, structured starter code in tickets, minimum UI standards baked into the tooling — so the handover to engineering is faster and cleaner, not slower.</p>
-      <p style="max-width:560px;">But the UI is the easy part. The harder problems — user journeys that actually work, edge cases that don't break trust, consistency across products, accessible experiences that pass procurement — are where Product Experience makes the difference between shipping fast and shipping well.</p>
-      <p style="max-width:560px;">The deal is simple: we build the rules into the tools so anyone can ship with as much or as little UX support as they want. In return, everything that ships gets reviewed — retrospectively if it has to be — for consistency, usability, and accessibility. Speed up front, quality assurance behind.</p>
+      <p>User Experience was about designing for users — making things usable, learnable, accessible. Product Experience is about designing for buyers of a product — building something people want to buy that is also usable, consistent, accessible, and trustworthy.</p>
+      <p>The function is evolving into a hybrid of design, engineering enablement, and operations. We create the ability for anyone to ship ideas quickly — prototypes, structured starter code in tickets, minimum UI standards baked into the tooling — so the handover to engineering is faster and cleaner, not slower.</p>
+      <p>But the UI is the easy part. The harder problems — user journeys that actually work, edge cases that don't break trust, consistency across products, accessible experiences that pass procurement — are where Product Experience makes the difference between shipping fast and shipping well.</p>
+      <p>The deal is simple: we build the rules into the tools so anyone can ship with as much or as little UX support as they want. In return, everything that ships gets reviewed — retrospectively if it has to be — for consistency, usability, and accessibility. Speed up front, quality assurance behind.</p>
       <div class="callout">Product Experience owns the standards, the tooling, and the quality floor that let the whole organisation ship UI fast — and as the platform becomes more agentic, we own how it behaves, not just how it looks.</div>
     </div>
     <div class="pfoot">Product Experience Strategy · September 2026</div>
@@ -312,38 +312,49 @@
     <div class="pfoot">Product Experience Strategy · September 2026</div>
   </section>
 
-  <!-- ===== 4 · THREE ROUTES ===== -->
+  <!-- ===== 4 · FOUR ROUTES ===== -->
   <section class="slide dark">
     <div class="ghost br" aria-hidden="true">04</div>
     <div class="inner">
       <div class="kicker">Operating Model</div>
-      <h2>Three ways to work with us.</h2>
-      <p class="lede" style="margin-bottom:4px;">Not everything needs a UX review. Not everything should skip one. Here's how to know which route your work takes.</p>
+      <h2>Four ways to work with us.</h2>
+      <p class="lede" style="margin-bottom:4px;">Not everything needs a designer. But everything that ships gets better over time. Here's how to know which route your work takes.</p>
       <div class="route-cards">
         <div class="route-card">
           <div class="route-num">01</div>
           <div>
-            <div class="route-name">AI-Enabled Self-Service</div>
-            <div class="route-who">Any PM, developer, or exec</div>
-            <div class="route-desc">Use the skills, component library, and approved patterns to build and ship. No mandatory UX review up front. The quality standards are in the tooling. You get 80% there by default — and for many things, that's enough. UX will always review what ships and work with Product to place improvements in the roadmap.</div>
+            <div class="route-name">Self-Service</div>
+            <div class="route-who">The default — any PM, developer, or exec</div>
+            <div class="route-desc">Use the skills, component library, and approved patterns to build and ship. The quality standards are in the tooling — 80% BSDS compliance by default. UX reviews everything that ships and feeds improvements back into the tools and the roadmap.</div>
           </div>
         </div>
         <div class="route-card">
           <div class="route-num">02</div>
           <div>
-            <div class="route-name">Rapid UX Partnership</div>
-            <div class="route-who">Work that needs a second pair of eyes</div>
-            <div class="route-desc">You generate the solution. UX reviews while it's still cheap to change. Feedback within one working day. We look at flows, edge cases, and consistency — the things AI tooling can miss.</div>
+            <div class="route-name">UX Concept</div>
+            <div class="route-who">When you need a design direction before building</div>
+            <div class="route-desc">UX delivers a quick concept prototype based on an initiative or brief. Others take it forward and build the product from it. We review what ships and close gaps afterwards.</div>
           </div>
         </div>
         <div class="route-card">
           <div class="route-num">03</div>
           <div>
+            <div class="route-name">Rapid UX Review</div>
+            <div class="route-who">After delivery — fixing what shipped</div>
+            <div class="route-desc">UX reviews directly in the product repo. We fix custom UI, layout issues, and consistency gaps in code. Each fix also improves the plugin — same problem can't recur.</div>
+          </div>
+        </div>
+        <div class="route-card">
+          <div class="route-num">04</div>
+          <div>
             <div class="route-name">Embedded Product Experience</div>
-            <div class="route-who">New, conceptual, complex, or trust-critical</div>
+            <div class="route-who">New, complex, or trust-critical</div>
             <div class="route-desc">UX involved from the start. New interaction paradigms, trust-critical AI behaviours, cross-product journeys. The work where getting it right first time saves the most rework later.</div>
           </div>
         </div>
+      </div>
+      <div class="callout" style="margin-top:10px;margin-bottom:0;padding:10px 14px;font-size:13px;">
+        <strong>The flywheel:</strong> Every retroactive fix produces two outputs — the fix itself, and a system improvement (a new component, plugin rule, or pattern) that prevents the same problem recurring. The metric that proves it works: fewer issues each quarter because the tooling caught them first.
       </div>
     </div>
     <div class="pfoot">Product Experience Strategy · September 2026</div>
@@ -355,7 +366,7 @@
     <div class="inner">
       <div class="kicker">AI Trust</div>
       <h2>Nine principles for how our AI behaves.</h2>
-      <p class="lede" style="margin-bottom:18px;">As the platform becomes more agentic, someone needs to own how it communicates confidence, handles uncertainty, and hands control back to humans. Product defines the logic. UX defines the expression.</p>
+      <p class="lede" style="margin-bottom:10px;">As the platform becomes more agentic, someone needs to own how it communicates confidence, handles uncertainty, and hands control back to humans. Product defines the logic. UX defines the expression.</p>
       <div style="padding:0;" class="pline"><span class="n">01</span><span class="t"><b>Confidence</b> — How sure is the AI? Does it tell you?</span></div>
       <div class="pline"><span class="n">02</span><span class="t"><b>Control</b> — Can you stop it, override it, or undo it?</span></div>
       <div class="pline"><span class="n">03</span><span class="t"><b>Reasoning</b> — Does it explain why, not just what?</span></div>
@@ -375,11 +386,18 @@
     <div class="ghost br" aria-hidden="true">06</div>
     <div class="inner">
       <div class="kicker">Current State</div>
-      <h2>The trust audit, across three products.</h2>
+      <h2>We audited the code. Here's what we found.</h2>
+      <p class="lede" style="margin-bottom:12px; color: var(--muted-light); font-size:15px;">We checked the nine trust principles against the actual codebases of every product shipping AI chat — ChatStudio, Workflows, and Blue Prism Assistant.</p>
       <div class="score-row">
         <span class="sc sc-y">● 2 Implemented</span>
         <span class="sc sc-p">● 8 Partial / Dormant</span>
         <span class="sc sc-n">● 17 Missing</span>
+      </div>
+      <div style="display:flex; gap:20px; flex-wrap:wrap; font-size:11px; color:var(--muted-light); margin:6px 0 0 0;">
+        <span><span style="color:#4ADE80;">●</span> Done — working in production</span>
+        <span><span style="color:#FBBF24;">●</span> Partial — something exists but incomplete</span>
+        <span><span style="color:#FBBF24;">●</span> Dormant — code built, never switched on</span>
+        <span><span style="color:#F87171;">●</span> None — nothing in the codebase</span>
       </div>
       <div class="matrix-wrap">
         <table class="trust-matrix">
@@ -387,11 +405,11 @@
             <tr><th>Principle</th><th>In Plain English</th><th>ChatStudio</th><th>Workflows</th><th>BP Assistant</th></tr>
           </thead>
           <tbody>
-            <tr><td>Confidence</td><td class="plain">How sure is the AI? And does it tell you?</td><td><span class="st st-p">● Dormant</span></td><td><span class="st st-p">● Binary</span></td><td><span class="st st-n">● None</span></td></tr>
-            <tr><td>Control</td><td class="plain">Can you stop it, override it, or undo it?</td><td><span class="st st-p">● Dormant</span></td><td><span class="st st-p">● Basic</span></td><td><span class="st st-p">● Consent</span></td></tr>
-            <tr><td>Reasoning</td><td class="plain">Does it explain why it did what it did?</td><td><span class="st st-p">● Sources</span></td><td><span class="st st-p">● Trace</span></td><td><span class="st st-n">● None</span></td></tr>
+            <tr><td>Confidence</td><td class="plain">How sure is the AI? And does it tell you?</td><td><span class="st st-p">● Dormant</span></td><td><span class="st st-p">● Partial</span></td><td><span class="st st-n">● None</span></td></tr>
+            <tr><td>Control</td><td class="plain">Can you stop it, override it, or undo it?</td><td><span class="st st-p">● Dormant</span></td><td><span class="st st-p">● Partial</span></td><td><span class="st st-p">● Partial</span></td></tr>
+            <tr><td>Reasoning</td><td class="plain">Does it explain why it did what it did?</td><td><span class="st st-p">● Partial</span></td><td><span class="st st-p">● Partial</span></td><td><span class="st st-n">● None</span></td></tr>
             <tr><td>Provenance</td><td class="plain">Where did it get its information from? Can you check?</td><td><span class="st st-y">● Done</span></td><td><span class="st st-n">● None</span></td><td><span class="st st-y">● Done</span></td></tr>
-            <tr><td>Persona</td><td class="plain">Does the AI have a clear, consistent identity and tone?</td><td><span class="st st-n">● None</span></td><td><span class="st st-p">● Default</span></td><td><span class="st st-p">● Named</span></td></tr>
+            <tr><td>Persona</td><td class="plain">Does the AI have a clear, consistent identity and tone?</td><td><span class="st st-n">● None</span></td><td><span class="st st-p">● Partial</span></td><td><span class="st st-p">● Partial</span></td></tr>
             <tr><td>Agency</td><td class="plain">Is it acting on its own or waiting for your approval? Do you know which?</td><td><span class="st st-n">● None</span></td><td><span class="st st-n">● None</span></td><td><span class="st st-n">● None</span></td></tr>
             <tr><td>Feedback</td><td class="plain">How does the user tell the AI it was wrong?</td><td><span class="st st-n">● None</span></td><td><span class="st st-n">● None</span></td><td><span class="st st-n">● None</span></td></tr>
             <tr><td>Recovery</td><td class="plain">Can the user override, undo, or reject what the AI did?</td><td><span class="st st-n">● None</span></td><td><span class="st st-n">● None</span></td><td><span class="st st-n">● None</span></td></tr>
@@ -399,7 +417,7 @@
           </tbody>
         </table>
       </div>
-      <p style="margin-top:18px; font-size:14.5px;">Two things are fully implemented. Eight are partially built or dormant. Seventeen are missing entirely. The components exist — the coordination doesn't.</p>
+      <p style="margin-top:14px; font-size:13.5px;">Two principles fully implemented. Eight partially built or dormant. Seventeen missing entirely. The code exists in fragments — nobody has joined it up.</p>
     </div>
     <div class="pfoot">Product Experience Strategy · September 2026</div>
   </section>
@@ -449,7 +467,7 @@
       <div class="step"><div class="k">October 2026</div><div class="v"><p>Skills rollout goes external. PMs and developers get access to the same AI-powered design capabilities the UX team has been using internally. Component library, coding standards, approved patterns — all consumable through Claude.</p></div></div>
       <div class="step"><div class="k">Q4 2026</div><div class="v"><p>Trust principles agreed with Product. First three principles implemented across all products. One voice. One quality bar.</p></div></div>
       <div class="step"><div class="k">Ongoing</div><div class="v"><p>Repo bridge operational. Claude generates code that fits whatever environment the target repo uses — not what our prototyping platform assumes.</p></div></div>
-      <div class="step"><div class="k">The ask</div><div class="v"><p>Use the three routes. Start with self-service. Bring us in when it matters. Let the system work.</p></div></div>
+      <div class="step"><div class="k">The ask</div><div class="v"><p>Use the four routes. Start with self-service. Bring us in when it matters. Let the system work.</p></div></div>
       <p class="lede" style="margin-top:24px;">This isn't about defending UX's existence. It's about making the whole organisation ship faster and better — and making sure the product earns trust as it becomes more autonomous.</p>
     </div>
     <div class="pfoot">Product Experience Strategy · September 2026</div>
@@ -474,7 +492,7 @@
   const pad = n => String(n).padStart(2, '0');
   let current = 0;
 
-  const pageNames = ['Cover', 'The Shift', 'What We Own', 'Three Routes', 'Trust Principles', 'Current State', 'Quality Floor', "What's Next"];
+  const pageNames = ['Cover', 'The Shift', 'What We Own', 'Four Routes', 'Trust Principles', 'Current State', 'Quality Floor', "What's Next"];
   slides.forEach((s, i) => {
     const d = document.createElement('button');
     d.className = 'dot' + (i === 0 ? ' active' : '');
